@@ -45,7 +45,7 @@ let strLength: number = (ohhithere as string).length;
 interface RobotArmy {
   count: number,
   type: string,
-  magic?: string
+  magic?: string // ? means this property is optional
 }
 
 let fightRobotArmy = (robots: RobotArmy) =>{
@@ -65,7 +65,7 @@ let fightRobotArmy2F = (robots: {count: number, type: string, magic?: string}): 
 
 // *** Classes
 class Animal {
-    private sing: string;
+    private sing: string; // private variables are not accessible
     constructor(sound: string) {
         this.sing = sound;
     }
